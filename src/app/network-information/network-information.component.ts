@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { AbstractControl, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-network-information',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./network-information.component.scss']
 })
 export class NetworkInformationComponent {
-
+  @Input() networkDetailsForm: FormGroup;
 }

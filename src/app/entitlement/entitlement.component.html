@@ -1,1 +1,128 @@
-<p>entitlement works!</p>
+<h6 class="text-lg font-bold dark:text-white mb-8">Entitlement</h6>
+
+<div [formGroup]="entitlementForm">
+    <div class="flex gap-4">
+        <div class="entitlement-left w-1/2">
+            <div class="flex mb-6">
+                <div class="flex items-center h-5">
+                    <input id="camera-snapshots" aria-describedby="camera-snapshots" formControlName="cameraSnapshots"
+                        type="checkbox" value=""
+                        class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                </div>
+                <div class="ms-2 text-sm">
+                    <label for="camera-snapshots" class="font-medium text-gray-900 dark:text-gray-300">Camera
+                        Snapshots</label>
+                    <p id="helper-checkbox-text" class="text-xs font-normal text-gray-500 dark:text-gray-300">This
+                        provides
+                        access to snapshots</p>
+                </div>
+            </div>
+
+            <div class="flex mb-6">
+                <div class="flex items-center h-5">
+                    <input id="cabinet-output-access" aria-describedby="cabinet-output-access-text"
+                        formControlName="cabinetOutputAccess" type="checkbox" value=""
+                        class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                </div>
+                <div class="ms-2 text-sm">
+                    <label for="cabinet-output-access" class="font-medium text-gray-900 dark:text-gray-300">Cabinet
+                        Output
+                        Access</label>
+                    <p id="cabinet-output-access-text" class="text-xs font-normal text-gray-500 dark:text-gray-300">
+                        Provides
+                        access to Priority Control output pins on Core</p>
+                </div>
+            </div>
+
+            <div class="flex mb-6">
+                <div class="flex items-center h-5">
+                    <input id="video-access" aria-describedby="video-access-text" formControlName="videoAccess"
+                        type="checkbox" value=""
+                        class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                </div>
+                <div class="ms-2 text-sm">
+                    <label for="video-access" class="font-medium text-gray-900 dark:text-gray-300">Video
+                        Access</label>
+                    <p id="video-access-text" class="text-xs font-normal text-gray-500 dark:text-gray-300">Provides
+                        access to live video streams, snapshots and previously recorded video</p>
+                </div>
+            </div>
+
+            <div class="flex mb-6">
+                <div class="flex items-center h-5">
+                    <input id="mqtt-telemetry" aria-describedby="mqtt-telemetry-text" formControlName="mqttTelemetry"
+                        type="checkbox" value=""
+                        class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                </div>
+                <div class="ms-2 text-sm">
+                    <label for="mqtt-telemetry" class="font-medium text-gray-900 dark:text-gray-300">MQTT
+                        Telemetry</label>
+                    <p id="mqtt-telemetry-text" class="text-xs font-normal text-gray-500 dark:text-gray-300">Provides
+                        access to subscribe and telemetry events</p>
+                </div>
+            </div>
+        </div>
+        <div class="entitlement-right w-1/2">
+            <div class="flex mb-6">
+                <div class="flex items-center h-5">
+                    <input id="mqtt-raw-detector-events" aria-describedby="mqtt-raw-detector-events-text"
+                        formControlName="mqttRawDetectorEvents" type="checkbox" value=""
+                        class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                </div>
+                <div class="ms-2 text-sm">
+                    <label for="mqtt-raw-detector-events" class="font-medium text-gray-900 dark:text-gray-300">MQTT Raw
+                        Detector
+                        Events</label>
+                    <p id="mqtt-raw-detector-events-text" class="text-xs font-normal text-gray-500 dark:text-gray-300">
+                        Provides
+                        access to subscribe detection events (movements, presence, pulse, objects)</p>
+                </div>
+            </div>
+
+            <div class="flex mb-6">
+                <div class="flex items-center h-5">
+                    <input id="mqtt-publish" aria-describedby="mqtt-publish-text" formControlName="mqttPublish"
+                        type="checkbox" value=""
+                        class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                </div>
+                <div class="ms-2 text-sm">
+                    <label for="mqtt-publish" class="font-medium text-gray-900 dark:text-gray-300">MQTT
+                        Publish</label>
+                    <p id="mqtt-publish-text" class="text-xs font-normal text-gray-500 dark:text-gray-300">Allow an
+                        application to publish telemetry to Miovision's cloud</p>
+                </div>
+            </div>
+
+            <div class="flex mb-6">
+                <div class="flex items-center h-5">
+                    <input id="mqtt-access-764-card" aria-describedby="mqtt-access-764-card-text"
+                        formControlName="mqttAccess764Card" type="checkbox" value=""
+                        class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                </div>
+                <div class="ms-2 text-sm">
+                    <label for="mqtt-access-764-card" class="font-medium text-gray-900 dark:text-gray-300">MQTT Access
+                        764
+                        Card</label>
+                    <p id="mqtt-access-764-card-text" class="text-xs font-normal text-gray-500 dark:text-gray-300">
+                        Provides
+                        access to an Opticom 764 card over MQTT</p>
+                </div>
+            </div>
+
+            <div class="flex mb-6">
+                <div class="flex items-center h-5">
+                    <input id="priority-control" aria-describedby="priority-control-text"
+                        formControlName="priorityControl" type="checkbox" value=""
+                        class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                </div>
+                <div class="ms-2 text-sm">
+                    <label for="priority-control" class="font-medium text-gray-900 dark:text-gray-300">Priority
+                        Control</label>
+                    <p id="priority-control-text" class="text-xs font-normal text-gray-500 dark:text-gray-300">Provides
+                        access to preemption and priority control APIs (preempts and TSP)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

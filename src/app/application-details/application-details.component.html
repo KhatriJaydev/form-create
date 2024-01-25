@@ -1,1 +1,49 @@
-<p>application-details works!</p>
+<h6 class="text-lg font-bold dark:text-white mb-8">Application Name</h6>
+
+<div [formGroup]="appDetailForm">
+    <div>
+        <div class="mb-4 flex gap-4">
+            <div class="w-9/12">
+                <label for="app-name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Application
+                    Name</label>
+                <input type="text" id="app-name" formControlName="appName">
+            </div>
+            <div class="w-1/4">
+                <label for="app0id" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Id</label>
+                <input type="text" id="app0id" formControlName="appId">
+            </div>
+        </div>
+        <div class="description mb-8">
+            <label for="message"
+                class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Description</label>
+            <textarea id="message" rows="4" formControlName="description"
+                class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                placeholder="Write your thoughts here..."></textarea>
+        </div>
+        <div class="api-versions flex gap-4 mb-4">
+            <div class="w-2/4">
+                <label for="mini-api" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Mini API
+                    Version</label>
+                <input type="text" id="mini-api" formControlName="miniApi">
+            </div>
+            <div class="w-2/4">
+                <label for="target-api" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Target API
+                    Version</label>
+                <input type="text" id="target-api" formControlName="targetApi">
+            </div>
+        </div>
+        <div class="w-full mb-4">
+            <label for="deployment-version"
+                class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Deployment
+                Version</label>
+            <input type="text" id="deployment-version" formControlName="deploymentVersion">
+        </div>
+        <div class="w-full mb-8">
+            <label for="documentation-link"
+                class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Application Documentation
+                Link</label>
+            <input type="text" id="documentation-link" formControlName="documentationLink">
+        </div>
+
+    </div>
+</div>

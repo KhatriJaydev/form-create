@@ -8,6 +8,8 @@ import { NetworkInformationComponent } from './network-information/network-infor
 import { PublishAppComponent } from './publish-app/publish-app.component';
 import { LimitsComponent } from './limits/limits.component';
 import { EntitlementComponent } from './entitlement/entitlement.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { CreateAppVersionComponent } from './create-app-version/create-app-version.component';
 
 @NgModule({
   declarations: [
@@ -16,11 +18,15 @@ import { EntitlementComponent } from './entitlement/entitlement.component';
     NetworkInformationComponent,
     PublishAppComponent,
     LimitsComponent,
-    EntitlementComponent
+    EntitlementComponent,
+    CreateAppVersionComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

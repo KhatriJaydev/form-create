@@ -1,0 +1,91 @@
+{
+    "data": [
+        {
+            "appName": "Dummy App 1",
+            "appId": "dummyId1",
+            "description": "This is a dummy description for App 1.",
+            "miniApi": "Mini API 1",
+            "targetApi": "Target API 1",
+            "deploymentVersion": "v1.0",
+            "documentationLink": "http://dummy-docs.com/app1",
+            "internet": true,
+            "customer": false,
+            "http": true,
+            "cellular": false,
+            "posts": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, aspernatur! Quas exercitationem tenetur earum dolore quibusdam aliquid, perspiciatis quod voluptatum, ex, libero sunt natus unde ipsam odit dolores doloribus. Beatae.",
+            "ramMb": 512,
+            "shares": 10,
+            "screatchSpace": "100MB",
+            "persistent": "Yes",
+            "entitlements": [
+                "cameraSnapshots",
+                "priorityControl"
+            ]
+        },
+        {
+            "appName": "Dummy App 2",
+            "appId": "dummyId2",
+            "description": "This is a dummy description for App 2.",
+            "miniApi": "Mini API 2",
+            "targetApi": "Target API 2",
+            "deploymentVersion": "v2.0",
+            "documentationLink": "http://dummy-docs.com/app2",
+            "internet": true,
+            "customer": false,
+            "http": true,
+            "cellular": false,
+            "posts": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, aspernatur! Quas exercitationem tenetur earum dolore quibusdam aliquid, perspiciatis quod voluptatum, ex, libero sunt natus unde ipsam odit dolores doloribus. Beatae.",
+            "ramMb": 1024,
+            "shares": 5,
+            "screatchSpace": "50MB",
+            "persistent": "No",
+            "entitlements": [
+                "cameraSnapshots"
+            ]
+        },
+        {
+            "appName": "Dummy App 3",
+            "appId": "dummyId3",
+            "description": "This is a dummy description for App 3.",
+            "miniApi": "Mini API 3",
+            "targetApi": "Target API 3",
+            "deploymentVersion": "v3.0",
+            "documentationLink": "http://dummy-docs.com/app3",
+            "internet": true,
+            "customer": false,
+            "http": true,
+            "cellular": false,
+            "posts": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, aspernatur! Quas exercitationem tenetur earum dolore quibusdam aliquid, perspiciatis quod voluptatum, ex, libero sunt natus unde ipsam odit dolores doloribus. Beatae.",
+            "ramMb": 2048,
+            "shares": 15,
+            "screatchSpace": "200MB",
+            "persistent": "Yes",
+            "entitlements": [
+                "cameraSnapshots",
+                "cabinetOutputAccess"
+            ]
+        },
+        {
+            "appName": "Dummy App 4",
+            "appId": "dummyId4",
+            "description": "This is a dummy description for App 4.",
+            "miniApi": "Mini API 4",
+            "targetApi": "Target API 4",
+            "deploymentVersion": "v4.0",
+            "documentationLink": "http://dummy-docs.com/app4",
+            "internet": true,
+            "customer": false,
+            "http": true,
+            "cellular": false,
+            "posts": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, aspernatur! Quas exercitationem tenetur earum dolore quibusdam aliquid, perspiciatis quod voluptatum, ex, libero sunt natus unde ipsam odit dolores doloribus. Beatae.",
+            "ramMb": 4096,
+            "shares": 20,
+            "screatchSpace": "500MB",
+            "persistent": "Yes",
+            "entitlements": [
+                "cameraSnapshots",
+                "cabinetOutputAccess"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+create version
+<div>
+    <div>
+        <button (click)="createNewApp()" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+            Create Application
+        </button>
+    </div>
+
+    <div class="flex gap-4 m-4">
+        <ng-container *ngFor="let item of appDetails.data">
+            <button (click)="createNewVersion(item.appId)"
+                class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                {{item.appName}}
+            </button>
+        </ng-container>
+    </div>
+</div>

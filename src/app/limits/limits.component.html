@@ -1,1 +1,24 @@
-<p>limits works!</p>
+<h6 class="text-lg font-bold dark:text-white mb-8">Limits</h6>
+<div [formGroup]="limitsForm">
+
+    <div class="w-full mb-4">
+        <label for="ram-mb" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">RAM (in
+            MB)</label>
+        <input type="text" id="ram-mb" formControlName="ramMb">
+    </div>
+    <div class="w-full mb-4">
+        <label for="shares" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">CPU
+            Shares</label>
+        <input type="text" id="shares" formControlName="shares">
+    </div>
+    <div class="w-full mb-4">
+        <label for="screatch-space" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Screatch
+            Space (in MB)</label>
+        <input type="text" id="screatch-space" formControlName="screatchSpace">
+    </div>
+    <div class="w-full mb-4">
+        <label for="persistent" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Persistent
+            Space (in MB)</label>
+        <input type="text" id="persistent" formControlName="persistent">
+    </div>
+</div>

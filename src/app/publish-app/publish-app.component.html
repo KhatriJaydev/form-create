@@ -1,9 +1,25 @@
-<div>publish-app works!
-    <h1 class="text-3xl font-bold underline">
-        Hello world!
-    </h1>
-</div>
-<app-application-details></app-application-details>
-<app-network-information></app-network-information>
-<app-limits></app-limits>
-<app-entitlement></app-entitlement>
+<main class="container mx-auto p-4 px-8">
+    <form [formGroup]="applicationForm">
+        <div class="flex gap-4">
+            <div class="w-1/2 h-full">
+                <app-application-details
+                    [appDetailForm]="applicationForm.get('appDetailForm')"></app-application-details>
+            </div>
+            <div class="w-1/2 h-full">
+                <app-network-information
+                    [networkDetailsForm]="applicationForm.get('networkDetailsForm')"></app-network-information>
+                <app-limits [limitsForm]="applicationForm.get('limitsForm')"></app-limits>
+
+            </div>
+        </div>
+
+        <div class=" flex mb-4 gap-4">
+            <div class="w-full h-full">
+                <app-entitlement [entitlementForm]="applicationForm.get('entitlementForm')"></app-entitlement>
+            </div>
+        </div>
+        <div class="ms-5 me-10 flex justify-end">
+            <button type="button" class="save-button" (click)="saveData()">Save</button>
+        </div>
+    </form>
+</main>
