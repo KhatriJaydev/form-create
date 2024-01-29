@@ -20,8 +20,7 @@
       "entitlements": [
         "cameraSnapshots",
         "priorityControl"
-      ],
-      "id": "5b78"
+      ]
     },
     {
       "appName": "Dummy App 2",
@@ -42,8 +41,7 @@
       "persistent": "No",
       "entitlements": [
         "cameraSnapshots"
-      ],
-      "id": "ffe2"
+      ]
     },
     {
       "appName": "Dummy App 3",
@@ -65,8 +63,7 @@
       "entitlements": [
         "cameraSnapshots",
         "cabinetOutputAccess"
-      ],
-      "id": "c17d"
+      ]
     },
     {
       "appName": "Dummy App 4",
@@ -88,43 +85,7 @@
       "entitlements": [
         "cameraSnapshots",
         "cabinetOutputAccess"
-      ],
-      "id": "5e3e"
-    },
-    {
-      "id": "29e4",
-      "appDetailForm": {
-        "appName": "Dummy App 5",
-        "appId": "dummyId5",
-        "description": "This is a dummy description for App 4.",
-        "miniApi": "Mini API 5",
-        "targetApi": "Target API 5",
-        "deploymentVersion": "v5.0",
-        "documentationLink": "http://dummy-docs.com/app5"
-      },
-      "networkDetailsForm": {
-        "internet": "true",
-        "customer": "false",
-        "http": "true",
-        "cellular": "false",
-        "posts": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, aspernatur! Quas exercitationem tenetur earum dolore quibusdam aliquid, perspiciatis quod voluptatum, ex, libero sunt natus unde ipsam odit dolores doloribus. Beatae."
-      },
-      "limitsForm": {
-        "ramMb": "5000",
-        "shares": "20",
-        "screatchSpace": "1000MB",
-        "persistent": "Yes"
-      },
-      "entitlementForm": {
-        "cameraSnapshots": "",
-        "cabinetOutputAccess": "",
-        "videoAccess": "",
-        "mqttTelemetry": "",
-        "mqttRawDetectorEvents": "",
-        "mqttPublish": "",
-        "mqttAccess764Card": "",
-        "priorityControl": ""
-      }
+      ]
     }
   ]
 }
