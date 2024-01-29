@@ -20,7 +20,8 @@
       "entitlements": [
         "cameraSnapshots",
         "priorityControl"
-      ]
+      ],
+      "id": "dummyId1"
     },
     {
       "appName": "Dummy App 2",
@@ -41,9 +42,11 @@
       "persistent": "No",
       "entitlements": [
         "cameraSnapshots"
-      ]
+      ],
+      "id": "dummyId2"
     },
     {
+      "id": "dummyId3",
       "appName": "Dummy App 3",
       "appId": "dummyId3",
       "description": "This is a dummy description for App 3.",
@@ -85,7 +88,8 @@
       "entitlements": [
         "cameraSnapshots",
         "cabinetOutputAccess"
-      ]
+      ],
+      "id": "dummyId4"
     }
   ]
 }
